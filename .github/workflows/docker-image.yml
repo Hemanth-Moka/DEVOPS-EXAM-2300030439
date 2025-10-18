@@ -27,7 +27,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ./backend-springbootapp
-          file: ./backend-springbootapp/b.dockerfile
+          file: ./backend-springbootapp/backend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/2300030439:final
 
